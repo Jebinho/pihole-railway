@@ -1,0 +1,8 @@
+{
+  "build": {
+    "builder": "DOCKERFILE"
+  },
+  "deploy": {
+    "startCommand": "docker run -p 53:53/udp -p 80:80 -e WEBPASSWORD=$WEBPASSWORD -e TZ=$TZ pihole/pihole:2024.06.0"
+  }
+}
